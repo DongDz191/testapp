@@ -1,4 +1,5 @@
 import streamlit as st
+from app import main_app
 
 def main():
     # Tạo placeholder
