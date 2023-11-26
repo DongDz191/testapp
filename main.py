@@ -1,4 +1,5 @@
 import streamlit as st
+from log import login
 from app import main_app
 
 def main():
@@ -7,7 +8,7 @@ def main():
 
     # Hiển thị form login
     with login_placeholder:
-        login_form = st.form(key='login_form')
+        login_form = st.form(key='logi')
         username = login_form.text_input('Tên đăng nhập')
         password = login_form.text_input('Mật khẩu', type='password')
         submit_button = login_form.form_submit_button('Đăng nhập')
