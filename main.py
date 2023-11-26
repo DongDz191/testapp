@@ -8,7 +8,7 @@ def main():
 
     # Hiển thị form login
     with login_placeholder:
-        login_form = st.form(key='logi')
+        login_form = st.form(key='login')
         username = login_form.text_input('Tên đăng nhập')
         password = login_form.text_input('Mật khẩu', type='password')
         submit_button = login_form.form_submit_button('Đăng nhập')
