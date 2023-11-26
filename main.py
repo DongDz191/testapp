@@ -1,14 +1,14 @@
 import streamlit as st
-from log import log
-from app import app
+from log import login
+from app import main_app
 
 # Kiểm tra trạng thái đăng nhập
 if 'login_status' not in st.session_state:
     st.session_state['login_status'] = False
 
 if st.session_state['login_status']:
-    app()
+    main_app()
 else:
-    if log():
+    if login():
         st.session_state['login_status'] = True
-        app()
+        main_app()
