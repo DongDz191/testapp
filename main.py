@@ -14,3 +14,4 @@ else:
     if login():
         st.session_state['login_status'] = True
         placeholder.empty()
+        main_app()
