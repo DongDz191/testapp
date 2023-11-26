@@ -7,7 +7,8 @@ if 'login_status' not in st.session_state:
     st.session_state['login_status'] = False
 
 if st.session_state['login_status']:
-    main_app()
+    # Hide the login form
+    st.write("You are logged in!")
 else:
     # Display the login form
     if login():
